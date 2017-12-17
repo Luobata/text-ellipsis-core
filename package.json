@@ -2,7 +2,7 @@
   "name": "text-ellipsis-core",
   "version": "0.0.1",
   "description": "the core of text-ellipsis.",
-  "main": "dist/bundle.js",
+  "main": "src/index.js",
   "scripts": {
     "build": "rollup -c build/rollup.config.js",
     "dev:build": "rollup -w -c build/rollup.config.js",
