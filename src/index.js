@@ -19,7 +19,7 @@ export default (font = {}, span) => {
 
     for (let i = 0; i <= font.text.length; i++) {
         if (beginLine > font.lineNum) break;
-        const left = beginLine === font.lineNum ? font.left : '';
+        const left = beginLine === parseInt(font.lineNum, 10) ? font.left : '';
         const str = font.text.substr(index, i - index) + left;
         const len = getLengthByDom(
             span,
