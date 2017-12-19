@@ -26,7 +26,7 @@ export default (font = {}, span) => {
             Object.assign({ value: str }, font),
         );
         // console.log(str, len);
-        if (len <= parseInt(font.width, 10)) {
+        if (len <= parseFloat(font.width, 10)) {
             line[beginLine - 1] = str;
         } else {
             i--;
