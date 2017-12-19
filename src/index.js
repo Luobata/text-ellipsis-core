@@ -9,7 +9,7 @@
 const getLengthByDom = (span, font = {}) => {
     span.innerText = font.value;
     // 因为offsetWidth存在四舍五入 降低精度
-    return span.offsetWidth - 0.5;
+    return span.offsetWidth + 0.5;
 };
 
 export default (font = {}, span) => {
